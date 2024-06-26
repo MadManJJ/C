@@ -19,8 +19,12 @@ namespace CP{
                 return (first == other.first && second == other.second);
             }
 
-            bool operator<(const pair<T1,T2> &other) const {
+            bool operator<(const pair<T1,T2> &other) const { // needed const for it ***********************
                 return ((first < other.first) || (first == other.first && second < other.second));
+            }
+
+            bool operator!=(const pair<T1,T2> &other){
+                return ((first != other.fist) || (second != other.second));
             }
     };
     
@@ -32,11 +36,11 @@ int main(){
     
     CP::pair<int , std::string> p1(14 , "a");
     CP::pair<int , std::string> p2(15 , "a");
-    // if(p1 < p2){
-    //     std::cout << "less than" << '\n';
-    // }else{
-    //     std::cout << "no" << '\n';
-    // }
+    if(p1 < p2){
+        std::cout << "less than" << '\n';
+    }else{
+        std::cout << "no" << '\n';
+    }
 
     std::set<CP::pair<int,int>> s;
     s.insert({1,15});
