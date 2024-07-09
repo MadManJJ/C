@@ -14,7 +14,7 @@ int main(){
         std::cout << to_str(t[i]) << std::endl; //the output value is a string
     }
 
-    for(int i = 0 ; i < std::size(t) ; i++){ //the output value is an int
-        std::cout << std::get<0>(t[i]) << " " << std::get<1>(t[i]) << std::endl;
+    for(int i = 0 ; i < std::size(t) ; i++){ 
+        std::cout << std::get<0>(t[i]) << " " << std::get<1>(t[i]) << std::endl; //the output value is an int
     }
 }

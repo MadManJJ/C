@@ -14,6 +14,5 @@ int main() {
     } else {
         std::cout << "Upper bound not found." << std::endl;
     }
-
     return 0;
 }
