@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <string>
 int main(){
     std::string hay,needle;
     int b;

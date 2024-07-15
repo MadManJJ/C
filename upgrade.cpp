@@ -14,7 +14,7 @@ int main() {
     int n;
     std::cout << "hello" << std::endl;
     std::cin >> n;
-    std::pair<std::string , std::string> grades[n];
+    std::pair<std::string , std::string> grades[n]; //doesn't work with older version of GCC I choose to disable red underline (It's about dynamic memory array can't have the number of element at runtime it need to be a constant)
     std::string sid,grade;
     for(int i = 0; i < n ; i++){
         std::cin >> sid >> grade;

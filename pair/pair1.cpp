@@ -1,6 +1,6 @@
 #include <iostream>
 #include <utility>
-
+#include <string>
 
 std::string to_str(std::pair<int,int> &p){
     return "[" + std::to_string(p.first) + "," + std::to_string(p.second) + "]";
