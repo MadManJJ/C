@@ -1,5 +1,5 @@
 import time
 
 while True:
-    print("ILOVEU", end=" ")
+    print("sada", end=" ")
     time.sleep(1)  # 1 second delay

@@ -3,12 +3,11 @@
 #include <typeinfo>
 
 int setpreci(double number , double position);
+
 int main(){
-      
     setpreci(25.5562556 , 5); 
     return 0;
 }
-
 
 int setpreci(double number , double position){
     std::string num_str = std::to_string(number);
