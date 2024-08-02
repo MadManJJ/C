@@ -1,4 +1,4 @@
-#include <iostream> //modify second before first
+#include <iostream> //modify second before first(compare second element first then compare the first element)
 #include <set>
 #include <vector>
 
@@ -23,13 +23,17 @@ namespace CP{
 }
 
 int main(){
-
-    std::vector<CP::pair<std::string,int>> v{};
+    std::vector<CP::pair<std::string,int>> v;
     v.push_back({"soar" , 5});
+    v.push_back({"spark",15});
     CP::pair<int,int> p(15,5);
+    CP::pair<int,int> a;
+    a.first  = 12;
+    a.second = 5;
     for(const auto &elem : v){
         std::cout << elem.first << " " << elem.second << '\n';
     }
-    std::cout << p.second;
+    std::cout << p.second << std::endl;
+    std::cout << a.first;
     return 0;
 }

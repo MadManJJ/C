@@ -10,10 +10,14 @@ namespace CP{
         public:
             T1 first;
             T2 second;
-            
 
             pair() : first() , second() {}
             pair(const T1 &a , const T2 &b) : first(a) , second(b) {}
+            // it's the same as :
+            // pair(const T1 &a , const T2 &b){
+            //     first = a;
+            //     second = b;
+            // }
 
             bool operator==(const pair<T1,T2> &other){
                 return (first == other.first && second == other.second);

@@ -14,10 +14,11 @@ int main(){
     if(n == 1){
         prime = false;
     }
+
     if(prime == true){
         std::cout << "Is a prime"<< std::endl;
     }
     else{
-        std::cout << "Not prime" << std::endl;
+        std::cout << "Not a prime" << std::endl;
     }
 }
