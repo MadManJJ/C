@@ -10,7 +10,7 @@ int factorial(int number){
         return 1;
     }
 }
-
+// testin
 int factorial2(int num){
     if(num >= 0 && num <= 1){
         return 1;
